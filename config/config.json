@@ -1,0 +1,10 @@
+{
+    "webhook": "",
+    "dump": {
+        "cooldown": 60,
+        "host": "localhost",
+        "user": "root",
+        "password": "",
+        "database": "database"
+    }
+}
