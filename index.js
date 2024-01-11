@@ -8,7 +8,7 @@ const del = require('del')
 
 const executeDump = async () => {
     if(!dump || typeof dump != 'object' || !dump.host  || !dump.database || !dump.user){
-        console.error('[SERVER] Something went wrong, you incorrectly defined your config.json')
+        console.error('[SERVER] Something went wrong, you defined incorrectly your config.json')
         return
     }
     const date = new Date()
@@ -46,7 +46,7 @@ const executeDump = async () => {
 
 const taskDump = async () => {
     if(!dump || typeof dump != 'object' || !dump.database){
-        console.error('[SERVER] Something went wrong, you incorrectly defined your config.json')
+        console.error('[SERVER] Something went wrong, you defined incorrectly your config.json')
         return
     } 
     const fileDir = await executeDump()
