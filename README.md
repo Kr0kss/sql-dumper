@@ -2,9 +2,6 @@
 
 <br />
 
-<!-- PROJECT LOGO -->
-<br />
-
   <h3 align="center">SQL-Dumper</h3>
 
 <p align="center">
