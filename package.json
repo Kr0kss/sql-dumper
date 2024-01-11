@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "del": "^6.0.0",
-    "discord.js": "^13.2.0",
+    "discord.js": "^14.14.1",
     "fs": "^0.0.1-security",
     "mysqldump": "^3.2.0",
     "zlib": "^1.0.5"

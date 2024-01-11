@@ -5,6 +5,7 @@ const fs = require('fs')
 const client = new WebhookClient({ url: webhook })
 const mysqldump = require('mysqldump')
 const del = require('del')
+const { EmbedBuilder } = require('discord.js');
 
 const executeDump = async () => {
     if(!dump || typeof dump != 'object' || !dump.host  || !dump.database || !dump.user){
@@ -49,13 +50,20 @@ const taskDump = async () => {
         console.error('[SERVER] Something went wrong, you defined incorrectly your config.json')
         return
     } 
+    const EmbedKroksLog = new EmbedBuilder()
+    .setURL('https://krokss.com/')
+	.setAuthor({ name: 'AutoDumpSystem', iconURL: 'https://cdn.discordapp.com/avatars/1195085017773252741/6de3f71339a8a1bbd5ed95ea9cdd3f5b.png?size=4096', url: 'https://krokss.com/' })
+	.setFooter({ text: 'kroksj\'s SQL-Dump System', iconURL: 'https://cdn.discordapp.com/avatars/1195085017773252741/6de3f71339a8a1bbd5ed95ea9cdd3f5b.png?size=4096' })
+    .setTimestamp()
+    .setDescription('DATE: ' + String(new Date()))
+    .setColor('#2b2d31');
+
     const fileDir = await executeDump()
     if(fileDir){
         try {
             await client.send({
-                content: '```ini\n[AUTOMATIC DUMP SYSTEM]\n[SQL-DUMPER]: BY- kroksj \n[DATA]: '+String(new Date())+'\n ```',
-                files: [String(fileDir)]
-                
+                embeds: [EmbedKroksLog],
+                files: [String(fileDir)] 
             })
         } catch (err) {
             console.log(err)
