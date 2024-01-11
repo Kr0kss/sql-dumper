@@ -31,7 +31,7 @@
 
 ## <img src="https://cdn.discordapp.com/emojis/1009754836314628146.gif" width="25px" height="25px">》Requirements
 - NodeJs v17+
-- Discord Token. Get it from [Discord Developers Portal](https://discord.com/developers/applications)
+- Discord Webhook. Get it from [Any Discord Channel](https://discord.com/)
 - Basic Knowledge about Discord.js [Discord.js Docs](https://discord.js.org/docs/packages/discord.js/14.14.1)
 
 ## <img src="https://cdn.discordapp.com/emojis/814216203466965052.png" width="25px" height="25px">》Installation Guide
