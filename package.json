@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npx nodemon"
   },
-  "author": "Js",
+  "author": "kroksj",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.13"
