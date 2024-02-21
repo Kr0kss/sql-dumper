@@ -53,7 +53,7 @@ npx nodemon
 ```
 
 ## <img src="https://cdn.discordapp.com/emojis/1036083490292244493.png" width="15px" height="15px">》Support Server
-[![DiscordBanner](https://invidget.switchblade.xyz/portuga-academy-902615124869779476)](https://discord.gg/portuga-academy-902615124869779476)
+[![DiscordBanner](https://invidget.switchblade.xyz/e3sHNQChdF)](https://discord.gg/e3sHNQChdF)
 
 [Support Server](https://discord.gg/portuga-academy-902615124869779476) - My Discord Server, feel free to contact me there ~ open a ticket
 
